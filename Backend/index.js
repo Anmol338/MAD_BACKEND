@@ -22,19 +22,19 @@ const remote_DB = "mongodb+srv://anmolshrestha:fAViOj6Z7JDVLjBq@ecommerce.yiui90
 mongoose.connect(remote_DB);
 
 // Declaring the routes
-const UserRoutes = require("./routes/user_routes");
+const UserRoutes = require("./src/routes/user_routes");
 app.use("/api/v1/user", UserRoutes);
 
-const CategoryRoutes = require("./routes/category_routes");
+const CategoryRoutes = require("./src/routes/category_routes");
 app.use("/api/v1/category", CategoryRoutes);
 
-const ProductRoutes = require("./routes/product_routes");
+const ProductRoutes = require("./src/routes/product_routes");
 app.use("/api/v1/product", ProductRoutes);
 
-const CartRoutes = require("./routes/cart_routes");
+const CartRoutes = require("./src/routes/cart_routes");
 app.use("/api/v1/cart", CartRoutes);
 
-const OrderRoutes = require("./routes/order_routes");
+const OrderRoutes = require("./src/routes/order_routes");
 app.use("/api/v1/order", OrderRoutes);
 
 // Assigning PORT to the server
